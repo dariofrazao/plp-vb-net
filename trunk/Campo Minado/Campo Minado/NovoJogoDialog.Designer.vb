@@ -27,10 +27,10 @@ Partial Class NovoJogoDialog
         Me.Cancel_Button = New System.Windows.Forms.Button
         Me.LabelAltura = New System.Windows.Forms.Label
         Me.LabelLargura = New System.Windows.Forms.Label
-        Me.LabelMinas = New System.Windows.Forms.Label
         Me.MaskedTextBoxAltura = New System.Windows.Forms.MaskedTextBox
         Me.MaskedTextBoxLargura = New System.Windows.Forms.MaskedTextBox
-        Me.MaskedTextBoxMinas = New System.Windows.Forms.MaskedTextBox
+        Me.Label1 = New System.Windows.Forms.Label
+        Me.Label2 = New System.Windows.Forms.Label
         Me.TableLayoutPanel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -42,7 +42,7 @@ Partial Class NovoJogoDialog
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.OK_Button, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.Cancel_Button, 1, 0)
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(193, 98)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(38, 98)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 1
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
@@ -74,9 +74,9 @@ Partial Class NovoJogoDialog
         Me.LabelAltura.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelAltura.Location = New System.Drawing.Point(39, 29)
         Me.LabelAltura.Name = "LabelAltura"
-        Me.LabelAltura.Size = New System.Drawing.Size(56, 17)
+        Me.LabelAltura.Size = New System.Drawing.Size(51, 17)
         Me.LabelAltura.TabIndex = 1
-        Me.LabelAltura.Text = "Altura:"
+        Me.LabelAltura.Text = "Altura"
         '
         'LabelLargura
         '
@@ -84,19 +84,9 @@ Partial Class NovoJogoDialog
         Me.LabelLargura.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LabelLargura.Location = New System.Drawing.Point(39, 59)
         Me.LabelLargura.Name = "LabelLargura"
-        Me.LabelLargura.Size = New System.Drawing.Size(70, 17)
+        Me.LabelLargura.Size = New System.Drawing.Size(65, 17)
         Me.LabelLargura.TabIndex = 2
-        Me.LabelLargura.Text = "Largura:"
-        '
-        'LabelMinas
-        '
-        Me.LabelMinas.AutoSize = True
-        Me.LabelMinas.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelMinas.Location = New System.Drawing.Point(183, 29)
-        Me.LabelMinas.Name = "LabelMinas"
-        Me.LabelMinas.Size = New System.Drawing.Size(55, 17)
-        Me.LabelMinas.TabIndex = 3
-        Me.LabelMinas.Text = "Minas:"
+        Me.LabelLargura.Text = "Largura"
         '
         'MaskedTextBoxAltura
         '
@@ -104,11 +94,11 @@ Partial Class NovoJogoDialog
         Me.MaskedTextBoxAltura.AsciiOnly = True
         Me.MaskedTextBoxAltura.BeepOnError = True
         Me.MaskedTextBoxAltura.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals
-        Me.MaskedTextBoxAltura.Location = New System.Drawing.Point(115, 28)
+        Me.MaskedTextBoxAltura.Location = New System.Drawing.Point(139, 28)
         Me.MaskedTextBoxAltura.Mask = "00000"
         Me.MaskedTextBoxAltura.Name = "MaskedTextBoxAltura"
         Me.MaskedTextBoxAltura.RejectInputOnFirstFailure = True
-        Me.MaskedTextBoxAltura.Size = New System.Drawing.Size(37, 20)
+        Me.MaskedTextBoxAltura.Size = New System.Drawing.Size(39, 20)
         Me.MaskedTextBoxAltura.SkipLiterals = False
         Me.MaskedTextBoxAltura.TabIndex = 5
         Me.MaskedTextBoxAltura.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals
@@ -119,31 +109,35 @@ Partial Class NovoJogoDialog
         Me.MaskedTextBoxLargura.AsciiOnly = True
         Me.MaskedTextBoxLargura.BeepOnError = True
         Me.MaskedTextBoxLargura.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals
-        Me.MaskedTextBoxLargura.Location = New System.Drawing.Point(115, 56)
+        Me.MaskedTextBoxLargura.Location = New System.Drawing.Point(139, 56)
         Me.MaskedTextBoxLargura.Mask = "00000"
         Me.MaskedTextBoxLargura.Name = "MaskedTextBoxLargura"
         Me.MaskedTextBoxLargura.RejectInputOnFirstFailure = True
-        Me.MaskedTextBoxLargura.Size = New System.Drawing.Size(37, 20)
+        Me.MaskedTextBoxLargura.Size = New System.Drawing.Size(39, 20)
         Me.MaskedTextBoxLargura.SkipLiterals = False
         Me.MaskedTextBoxLargura.TabIndex = 6
         Me.MaskedTextBoxLargura.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals
         Me.MaskedTextBoxLargura.ValidatingType = GetType(Integer)
         '
-        'MaskedTextBoxMinas
+        'Label1
         '
-        Me.MaskedTextBoxMinas.AllowPromptAsInput = False
-        Me.MaskedTextBoxMinas.AsciiOnly = True
-        Me.MaskedTextBoxMinas.BeepOnError = True
-        Me.MaskedTextBoxMinas.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals
-        Me.MaskedTextBoxMinas.Location = New System.Drawing.Point(244, 26)
-        Me.MaskedTextBoxMinas.Mask = "00000"
-        Me.MaskedTextBoxMinas.Name = "MaskedTextBoxMinas"
-        Me.MaskedTextBoxMinas.RejectInputOnFirstFailure = True
-        Me.MaskedTextBoxMinas.Size = New System.Drawing.Size(37, 20)
-        Me.MaskedTextBoxMinas.SkipLiterals = False
-        Me.MaskedTextBoxMinas.TabIndex = 7
-        Me.MaskedTextBoxMinas.TextMaskFormat = System.Windows.Forms.MaskFormat.ExcludePromptAndLiterals
-        Me.MaskedTextBoxMinas.ValidatingType = GetType(Integer)
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(88, 32)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(34, 13)
+        Me.Label1.TabIndex = 7
+        Me.Label1.Text = "(7-30)"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(102, 62)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(34, 13)
+        Me.Label2.TabIndex = 8
+        Me.Label2.Text = "(7-30)"
         '
         'NovoJogoDialog
         '
@@ -151,11 +145,11 @@ Partial Class NovoJogoDialog
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.Cancel_Button
-        Me.ClientSize = New System.Drawing.Size(351, 139)
-        Me.Controls.Add(Me.MaskedTextBoxMinas)
+        Me.ClientSize = New System.Drawing.Size(216, 139)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.MaskedTextBoxLargura)
         Me.Controls.Add(Me.MaskedTextBoxAltura)
-        Me.Controls.Add(Me.LabelMinas)
         Me.Controls.Add(Me.LabelLargura)
         Me.Controls.Add(Me.LabelAltura)
         Me.Controls.Add(Me.TableLayoutPanel1)
@@ -166,6 +160,7 @@ Partial Class NovoJogoDialog
         Me.ShowInTaskbar = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "NovoJogo"
+        Me.TopMost = True
         Me.TableLayoutPanel1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -176,9 +171,9 @@ Partial Class NovoJogoDialog
     Friend WithEvents Cancel_Button As System.Windows.Forms.Button
     Friend WithEvents LabelAltura As System.Windows.Forms.Label
     Friend WithEvents LabelLargura As System.Windows.Forms.Label
-    Friend WithEvents LabelMinas As System.Windows.Forms.Label
     Friend WithEvents MaskedTextBoxAltura As System.Windows.Forms.MaskedTextBox
     Friend WithEvents MaskedTextBoxLargura As System.Windows.Forms.MaskedTextBox
-    Friend WithEvents MaskedTextBoxMinas As System.Windows.Forms.MaskedTextBox
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Label2 As System.Windows.Forms.Label
 
 End Class
