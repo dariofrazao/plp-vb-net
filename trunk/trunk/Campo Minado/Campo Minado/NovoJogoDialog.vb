@@ -10,9 +10,11 @@ Public Class NovoJogoDialog
         Try
             AlturaD = MaskedTextBoxAltura.Text
             LarguraD = MaskedTextBoxLargura.Text
-            MinasD = MaskedTextBoxMinas.Text
-            Me.DialogResult = System.Windows.Forms.DialogResult.OK
-            Me.Close()
+            If (AlturaD >= 7 And AlturaD <= 30 And LarguraD >= 7 And LarguraD <= 30) Then
+                MinasD = AlturaD * Largura / 3
+                Me.DialogResult = System.Windows.Forms.DialogResult.OK
+                Me.Close()
+            End If
         Catch Except As InvalidCastException
         End Try
     End Sub

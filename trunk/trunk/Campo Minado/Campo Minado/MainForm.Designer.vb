@@ -29,7 +29,12 @@ Partial Class MainForm
         Me.SairToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.AjudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.SobreToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
+        Me.PanelPontuacoes = New System.Windows.Forms.TableLayoutPanel
+        Me.PontuacaoHumano = New System.Windows.Forms.Label
+        Me.Label2 = New System.Windows.Forms.Label
+        Me.C = New Campo_Minado.Campo
         Me.MenuStrip1.SuspendLayout()
+        Me.PanelPontuacoes.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
@@ -51,18 +56,18 @@ Partial Class MainForm
         'NovoJogoToolStripMenuItem
         '
         Me.NovoJogoToolStripMenuItem.Name = "NovoJogoToolStripMenuItem"
-        Me.NovoJogoToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.NovoJogoToolStripMenuItem.Size = New System.Drawing.Size(131, 22)
         Me.NovoJogoToolStripMenuItem.Text = "&Novo Jogo"
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(149, 6)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(128, 6)
         '
         'SairToolStripMenuItem
         '
         Me.SairToolStripMenuItem.Name = "SairToolStripMenuItem"
-        Me.SairToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.SairToolStripMenuItem.Size = New System.Drawing.Size(131, 22)
         Me.SairToolStripMenuItem.Text = "&Sair"
         '
         'AjudaToolStripMenuItem
@@ -75,20 +80,79 @@ Partial Class MainForm
         'SobreToolStripMenuItem
         '
         Me.SobreToolStripMenuItem.Name = "SobreToolStripMenuItem"
-        Me.SobreToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.SobreToolStripMenuItem.Size = New System.Drawing.Size(113, 22)
         Me.SobreToolStripMenuItem.Text = "&Sobre..."
+        '
+        'PanelPontuacoes
+        '
+        Me.PanelPontuacoes.AutoSize = True
+        Me.PanelPontuacoes.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.PanelPontuacoes.ColumnCount = 2
+        Me.PanelPontuacoes.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.64706!))
+        Me.PanelPontuacoes.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 143.0!))
+        Me.PanelPontuacoes.Controls.Add(Me.PontuacaoHumano, 0, 0)
+        Me.PanelPontuacoes.Controls.Add(Me.Label2, 1, 0)
+        Me.PanelPontuacoes.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.PanelPontuacoes.Location = New System.Drawing.Point(0, 247)
+        Me.PanelPontuacoes.Name = "PanelPontuacoes"
+        Me.PanelPontuacoes.RowCount = 1
+        Me.PanelPontuacoes.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.PanelPontuacoes.Size = New System.Drawing.Size(284, 17)
+        Me.PanelPontuacoes.TabIndex = 2
+        '
+        'PontuacaoHumano
+        '
+        Me.PontuacaoHumano.AutoSize = True
+        Me.PontuacaoHumano.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.PontuacaoHumano.Dock = System.Windows.Forms.DockStyle.Left
+        Me.PontuacaoHumano.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PontuacaoHumano.Location = New System.Drawing.Point(3, 0)
+        Me.PontuacaoHumano.Name = "PontuacaoHumano"
+        Me.PontuacaoHumano.Size = New System.Drawing.Size(17, 17)
+        Me.PontuacaoHumano.TabIndex = 1
+        Me.PontuacaoHumano.Text = "0"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(264, 0)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(17, 17)
+        Me.Label2.TabIndex = 3
+        Me.Label2.Text = "0"
+        '
+        'C
+        '
+        Me.C.Altura = 0
+        Me.C.Bombas = 0
+        Me.C.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.C.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.C.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.C.Largura = 0
+        Me.C.Location = New System.Drawing.Point(0, 24)
+        Me.C.Margin = New System.Windows.Forms.Padding(0)
+        Me.C.MinimumSize = New System.Drawing.Size(70, 70)
+        Me.C.Name = "C"
+        Me.C.Size = New System.Drawing.Size(284, 240)
+        Me.C.TabIndex = 1
         '
         'MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 264)
+        Me.Controls.Add(Me.PanelPontuacoes)
+        Me.Controls.Add(Me.C)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "MainForm"
         Me.Text = "Campo Minado"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
+        Me.PanelPontuacoes.ResumeLayout(False)
+        Me.PanelPontuacoes.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -100,5 +164,9 @@ Partial Class MainForm
     Friend WithEvents SairToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents AjudaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents SobreToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents C As Campo_Minado.Campo
+    Friend WithEvents PanelPontuacoes As System.Windows.Forms.TableLayoutPanel
+    Friend WithEvents PontuacaoHumano As System.Windows.Forms.Label
+    Friend WithEvents Label2 As System.Windows.Forms.Label
 
 End Class

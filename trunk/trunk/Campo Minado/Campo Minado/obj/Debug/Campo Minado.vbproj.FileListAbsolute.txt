@@ -9,3 +9,15 @@ C:\Users\daniloaf\Documents\Visual Studio 2008\Projects\Campo Minado\Campo Minad
 C:\Users\daniloaf\Documents\Visual Studio 2008\Projects\Campo Minado\Campo Minado\obj\Debug\Campo Minado.xml
 C:\Users\daniloaf\Documents\Visual Studio 2008\Projects\Campo Minado\Campo Minado\obj\Debug\Campo Minado.pdb
 C:\Users\daniloaf\Documents\Visual Studio 2008\Projects\Campo Minado\Campo Minado\obj\Debug\Campo_Minado.NovoJogoDialog.resources
+C:\UFCG\plp-vb-net\trunk\Campo Minado\Campo Minado\obj\Debug\Campo Minado.exe
+C:\UFCG\plp-vb-net\trunk\Campo Minado\Campo Minado\obj\Debug\Campo Minado.xml
+C:\UFCG\plp-vb-net\trunk\Campo Minado\Campo Minado\obj\Debug\Campo Minado.pdb
+C:\UFCG\plp-vb-net\trunk\Campo Minado\Campo Minado\bin\Debug\Campo Minado.exe
+C:\UFCG\plp-vb-net\trunk\Campo Minado\Campo Minado\bin\Debug\Campo Minado.pdb
+C:\UFCG\plp-vb-net\trunk\Campo Minado\Campo Minado\bin\Debug\Campo Minado.xml
+C:\UFCG\plp-vb-net\trunk\Campo Minado\Campo Minado\obj\Debug\ResolveAssemblyReference.cache
+C:\UFCG\plp-vb-net\trunk\Campo Minado\Campo Minado\obj\Debug\Campo_Minado.MainForm.resources
+C:\UFCG\plp-vb-net\trunk\Campo Minado\Campo Minado\obj\Debug\Campo_Minado.Resources.resources
+C:\UFCG\plp-vb-net\trunk\Campo Minado\Campo Minado\obj\Debug\Campo_Minado.NovoJogoDialog.resources
+C:\UFCG\plp-vb-net\trunk\Campo Minado\Campo Minado\obj\Debug\Campo Minado.vbproj.GenerateResource.Cache
+C:\UFCG\plp-vb-net\trunk\Campo Minado\Campo Minado\obj\Debug\Campo_Minado.Sobre.resources
