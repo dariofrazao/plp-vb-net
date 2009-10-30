@@ -29,9 +29,10 @@ Partial Class MainForm
         Me.SairToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.AjudaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.SobreToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.PanelPontuacoes = New System.Windows.Forms.TableLayoutPanel
-        Me.PontuacaoHumano = New System.Windows.Forms.Label
-        Me.Label2 = New System.Windows.Forms.Label
+        Me.LabelPontuacaoHumano = New System.Windows.Forms.Label
+        Me.LabelPontuacaoPC = New System.Windows.Forms.Label
+        Me.LabelRestantes = New System.Windows.Forms.Label
+        Me.PanelPontuacoes = New System.Windows.Forms.Panel
         Me.C = New Campo_Minado.Campo
         Me.MenuStrip1.SuspendLayout()
         Me.PanelPontuacoes.SuspendLayout()
@@ -83,60 +84,61 @@ Partial Class MainForm
         Me.SobreToolStripMenuItem.Size = New System.Drawing.Size(113, 22)
         Me.SobreToolStripMenuItem.Text = "&Sobre..."
         '
+        'LabelPontuacaoHumano
+        '
+        Me.LabelPontuacaoHumano.BackColor = System.Drawing.Color.Blue
+        Me.LabelPontuacaoHumano.Dock = System.Windows.Forms.DockStyle.Left
+        Me.LabelPontuacaoHumano.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelPontuacaoHumano.Location = New System.Drawing.Point(0, 0)
+        Me.LabelPontuacaoHumano.Name = "LabelPontuacaoHumano"
+        Me.LabelPontuacaoHumano.Size = New System.Drawing.Size(80, 20)
+        Me.LabelPontuacaoHumano.TabIndex = 0
+        Me.LabelPontuacaoHumano.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'LabelPontuacaoPC
+        '
+        Me.LabelPontuacaoPC.BackColor = System.Drawing.Color.Red
+        Me.LabelPontuacaoPC.Dock = System.Windows.Forms.DockStyle.Right
+        Me.LabelPontuacaoPC.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelPontuacaoPC.Location = New System.Drawing.Point(204, 0)
+        Me.LabelPontuacaoPC.Name = "LabelPontuacaoPC"
+        Me.LabelPontuacaoPC.Size = New System.Drawing.Size(80, 20)
+        Me.LabelPontuacaoPC.TabIndex = 1
+        Me.LabelPontuacaoPC.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        '
+        'LabelRestantes
+        '
+        Me.LabelRestantes.BackColor = System.Drawing.Color.Green
+        Me.LabelRestantes.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.LabelRestantes.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LabelRestantes.Location = New System.Drawing.Point(80, 0)
+        Me.LabelRestantes.Name = "LabelRestantes"
+        Me.LabelRestantes.Size = New System.Drawing.Size(124, 20)
+        Me.LabelRestantes.TabIndex = 2
+        Me.LabelRestantes.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'PanelPontuacoes
         '
-        Me.PanelPontuacoes.AutoSize = True
-        Me.PanelPontuacoes.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.PanelPontuacoes.ColumnCount = 2
-        Me.PanelPontuacoes.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.64706!))
-        Me.PanelPontuacoes.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 143.0!))
-        Me.PanelPontuacoes.Controls.Add(Me.PontuacaoHumano, 0, 0)
-        Me.PanelPontuacoes.Controls.Add(Me.Label2, 1, 0)
+        Me.PanelPontuacoes.Controls.Add(Me.LabelRestantes)
+        Me.PanelPontuacoes.Controls.Add(Me.LabelPontuacaoPC)
+        Me.PanelPontuacoes.Controls.Add(Me.LabelPontuacaoHumano)
         Me.PanelPontuacoes.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.PanelPontuacoes.Location = New System.Drawing.Point(0, 247)
+        Me.PanelPontuacoes.Location = New System.Drawing.Point(0, 244)
         Me.PanelPontuacoes.Name = "PanelPontuacoes"
-        Me.PanelPontuacoes.RowCount = 1
-        Me.PanelPontuacoes.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
-        Me.PanelPontuacoes.Size = New System.Drawing.Size(284, 17)
-        Me.PanelPontuacoes.TabIndex = 2
-        '
-        'PontuacaoHumano
-        '
-        Me.PontuacaoHumano.AutoSize = True
-        Me.PontuacaoHumano.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.PontuacaoHumano.Dock = System.Windows.Forms.DockStyle.Left
-        Me.PontuacaoHumano.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.PontuacaoHumano.Location = New System.Drawing.Point(3, 0)
-        Me.PontuacaoHumano.Name = "PontuacaoHumano"
-        Me.PontuacaoHumano.Size = New System.Drawing.Size(17, 17)
-        Me.PontuacaoHumano.TabIndex = 1
-        Me.PontuacaoHumano.Text = "0"
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Dock = System.Windows.Forms.DockStyle.Right
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(264, 0)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(17, 17)
-        Me.Label2.TabIndex = 3
-        Me.Label2.Text = "0"
+        Me.PanelPontuacoes.Size = New System.Drawing.Size(284, 20)
+        Me.PanelPontuacoes.TabIndex = 4
         '
         'C
         '
         Me.C.Altura = 0
         Me.C.Bombas = 0
-        Me.C.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.C.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.C.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.C.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.C.Largura = 0
         Me.C.Location = New System.Drawing.Point(0, 24)
-        Me.C.Margin = New System.Windows.Forms.Padding(0)
-        Me.C.MinimumSize = New System.Drawing.Size(70, 70)
         Me.C.Name = "C"
         Me.C.Size = New System.Drawing.Size(284, 240)
-        Me.C.TabIndex = 1
+        Me.C.TabIndex = 3
         '
         'MainForm
         '
@@ -152,7 +154,6 @@ Partial Class MainForm
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.PanelPontuacoes.ResumeLayout(False)
-        Me.PanelPontuacoes.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -165,8 +166,9 @@ Partial Class MainForm
     Friend WithEvents AjudaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents SobreToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents C As Campo_Minado.Campo
-    Friend WithEvents PanelPontuacoes As System.Windows.Forms.TableLayoutPanel
-    Friend WithEvents PontuacaoHumano As System.Windows.Forms.Label
-    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents LabelPontuacaoHumano As System.Windows.Forms.Label
+    Friend WithEvents LabelPontuacaoPC As System.Windows.Forms.Label
+    Friend WithEvents LabelRestantes As System.Windows.Forms.Label
+    Friend WithEvents PanelPontuacoes As System.Windows.Forms.Panel
 
 End Class
