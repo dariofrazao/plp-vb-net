@@ -81,9 +81,13 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Humano.vb" />
+    <Compile Include="FimDeJogo.Designer.vb">
+      <DependentUpon>FimDeJogo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FimDeJogo.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Jogador.vb" />
-    <Compile Include="PC.vb" />
     <Compile Include="Sobre.Designer.vb">
       <DependentUpon>Sobre.vb</DependentUpon>
     </Compile>
@@ -126,6 +130,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FimDeJogo.resx">
+      <DependentUpon>FimDeJogo.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Sobre.resx">
       <DependentUpon>Sobre.vb</DependentUpon>
     </EmbeddedResource>

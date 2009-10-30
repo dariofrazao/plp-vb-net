@@ -21,3 +21,4 @@ C:\UFCG\plp-vb-net\trunk\Campo Minado\Campo Minado\obj\Debug\Campo_Minado.Resour
 C:\UFCG\plp-vb-net\trunk\Campo Minado\Campo Minado\obj\Debug\Campo_Minado.NovoJogoDialog.resources
 C:\UFCG\plp-vb-net\trunk\Campo Minado\Campo Minado\obj\Debug\Campo Minado.vbproj.GenerateResource.Cache
 C:\UFCG\plp-vb-net\trunk\Campo Minado\Campo Minado\obj\Debug\Campo_Minado.Sobre.resources
+C:\UFCG\plp-vb-net\trunk\Campo Minado\Campo Minado\obj\Debug\Campo_Minado.FimDeJogo.resources

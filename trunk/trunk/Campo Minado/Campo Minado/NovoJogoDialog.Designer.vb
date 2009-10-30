@@ -42,7 +42,7 @@ Partial Class NovoJogoDialog
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
         Me.TableLayoutPanel1.Controls.Add(Me.OK_Button, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.Cancel_Button, 1, 0)
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(38, 98)
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(34, 98)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
         Me.TableLayoutPanel1.RowCount = 1
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
@@ -72,7 +72,7 @@ Partial Class NovoJogoDialog
         '
         Me.LabelAltura.AutoSize = True
         Me.LabelAltura.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelAltura.Location = New System.Drawing.Point(39, 29)
+        Me.LabelAltura.Location = New System.Drawing.Point(34, 29)
         Me.LabelAltura.Name = "LabelAltura"
         Me.LabelAltura.Size = New System.Drawing.Size(51, 17)
         Me.LabelAltura.TabIndex = 1
@@ -82,7 +82,7 @@ Partial Class NovoJogoDialog
         '
         Me.LabelLargura.AutoSize = True
         Me.LabelLargura.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LabelLargura.Location = New System.Drawing.Point(39, 59)
+        Me.LabelLargura.Location = New System.Drawing.Point(34, 59)
         Me.LabelLargura.Name = "LabelLargura"
         Me.LabelLargura.Size = New System.Drawing.Size(65, 17)
         Me.LabelLargura.TabIndex = 2
@@ -123,21 +123,21 @@ Partial Class NovoJogoDialog
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(88, 32)
+        Me.Label1.Location = New System.Drawing.Point(83, 32)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(34, 13)
+        Me.Label1.Size = New System.Drawing.Size(40, 13)
         Me.Label1.TabIndex = 7
-        Me.Label1.Text = "(7-30)"
+        Me.Label1.Text = "(10-30)"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(102, 62)
+        Me.Label2.Location = New System.Drawing.Point(97, 62)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(34, 13)
+        Me.Label2.Size = New System.Drawing.Size(40, 13)
         Me.Label2.TabIndex = 8
-        Me.Label2.Text = "(7-30)"
+        Me.Label2.Text = "(10-30)"
         '
         'NovoJogoDialog
         '
