@@ -1,0 +1,10 @@
+C:\Documents and Settings\AislanML\Meus documentos\Visual Studio 2008\Projects\DAMAS\DAMAS\bin\Debug\DAMAS.exe
+C:\Documents and Settings\AislanML\Meus documentos\Visual Studio 2008\Projects\DAMAS\DAMAS\bin\Debug\DAMAS.pdb
+C:\Documents and Settings\AislanML\Meus documentos\Visual Studio 2008\Projects\DAMAS\DAMAS\bin\Debug\DAMAS.xml
+C:\Documents and Settings\AislanML\Meus documentos\Visual Studio 2008\Projects\DAMAS\DAMAS\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\AislanML\Meus documentos\Visual Studio 2008\Projects\DAMAS\DAMAS\obj\Debug\DAMAS.Resources.resources
+C:\Documents and Settings\AislanML\Meus documentos\Visual Studio 2008\Projects\DAMAS\DAMAS\obj\Debug\DAMAS.vbproj.GenerateResource.Cache
+C:\Documents and Settings\AislanML\Meus documentos\Visual Studio 2008\Projects\DAMAS\DAMAS\obj\Debug\DAMAS.exe
+C:\Documents and Settings\AislanML\Meus documentos\Visual Studio 2008\Projects\DAMAS\DAMAS\obj\Debug\DAMAS.xml
+C:\Documents and Settings\AislanML\Meus documentos\Visual Studio 2008\Projects\DAMAS\DAMAS\obj\Debug\DAMAS.pdb
+C:\Documents and Settings\AislanML\Meus documentos\Visual Studio 2008\Projects\DAMAS\DAMAS\obj\Debug\DAMAS.IUser.resources
